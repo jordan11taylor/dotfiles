@@ -1,0 +1,13 @@
+[user]
+	name = Jordan Keating
+	email = jordan@brakelazy.com
+[color]
+	ui = true
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/jordan/.gitignore
+[alias]
+  st = status
+  ds = diff --staged
+  put = push origin HEAD

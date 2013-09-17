@@ -1,0 +1,26 @@
+# OS X
+.DS_Store
+
+# Vim
+*.swo
+*.swp
+*.swn
+.netrwhist
+tags
+
+# Ruby/Rails
+/config/database.yml
+.rbx
+/.powrc
+/.rbenv-vars
+/.rbenv-version
+/.ruby-version
+/public/system
+/public/uploads
+
+# Node
+/node_modules
+/npm-debug.log
+
+# Pilot
+/.pilot-manifest
