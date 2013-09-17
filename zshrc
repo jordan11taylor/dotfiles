@@ -7,7 +7,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
-export EDITOR=subl
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -37,5 +36,23 @@ plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/usr/local/bin:$HOME/.bin:/usr/local/heroku/bin:/Users/jordan/.rbenv/shims:/Users/jordan/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# Prefer brew-installed binaries over system binaries (specifically, postgres)
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+# Add support for ~/.bin (prefer home binaries over brew binaries)
+export PATH=$HOME/.bin:$PATH
+
+# Use pilot
+export PATH=$HOME/.pilot/bin:$PATH
+
+# Pass escape codes to terminal when using less
+export LESS=-RS
+
+# I like Sublime
+export EDITOR=subl
+
+# Load rbenv
+eval "$(rbenv init -)"
+
+# Load Pilot
+eval "$(pilot init -)"
