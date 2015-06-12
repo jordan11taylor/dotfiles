@@ -7,6 +7,7 @@
 	helper = osxkeychain
 [core]
 	excludesfile = /Users/jordan/.gitignore
+	editor = atom --wait
 [alias]
   st = status
   ds = diff --staged
