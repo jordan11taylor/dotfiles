@@ -42,18 +42,12 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Add support for ~/.bin (prefer home binaries over brew binaries)
 export PATH=$HOME/.bin:$PATH
 
-# Use pilot
-export PATH=$HOME/.pilot/bin:$PATH
-
 # Pass escape codes to terminal when using less
 export LESS=-RS
 
 # I like Sublime
 export EDITOR=subl
 
-# Load rbenv
+# Setup & load rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
-# Load Pilot
-eval "$(pilot init -)"
-
